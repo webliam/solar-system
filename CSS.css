@@ -92,10 +92,10 @@ section{
 }
 .clearfix:after,
 .container,
-.navbar::after{
+.navbar:after{
     clear: both;
     display: table;
-
+    content: " ";
 }
 .wrap{
     height: 100%;
@@ -166,7 +166,7 @@ section{
     background-color: #f5f3f3;
 
 }
-#reservation{
+.reservation{
     width: 60%;
     padding: 10px;
     margin: 0 auto;
@@ -224,6 +224,7 @@ section{
         font-weight: 600;
         position: relative;
         display: inline;
+        float: right;
     }
     .trust:hover{
         color: orange;
@@ -301,7 +302,7 @@ section{
 
 
     }
-    .white-head{
+    .white-head {
         margin-top: 5%;
         color: #c9b0aa;
     }
@@ -324,4 +325,7 @@ section{
     }
     .text-center{
         margin: 20%;
+    }
+    #gallery{
+        text-align: center;
     }
