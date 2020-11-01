@@ -1,183 +1,339 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-        <title>Assignment #4 For Mahnaz</title>
-<link rel="stylesheet" type="text/css" href="CSS.css">
-</head>
-<body>
-    
-<!--Nav-->
-    <div class="wrap" >
-        <div class="menu-container">
-            <ul class="menu">
-                <a href="#home" id="link"><li>Home</li></a>
-                <a href="#gallery" ><li>Gallery</li></a>
-                <a href="#contact" ><li>Reservation</li></a>
-            </ul>
-        </div>
-    </div>
-<!--end nav-->
-<!--Home-->
-<div id="home" >
-    <div class="container">
-        <div class="flex-container">
-            <span class="head-main">
-                The space station
-            </span>
-        </div>
-    </div>
-</div>
-<!--Home-->
-<!--Gallery-->
-<section>
-    <div id="gallery">
-        <h2>Gallery</h2>
-        <div class="flex-container">
-            <!--photo-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="img/solar (1).jpg">
-                    <div class="photo-overlay">
-                        <h3 class="white-head">Click to enlarge</h3>
-                        <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
-                    </div>
-                </div>
-            </div>
-            <!--end photo-->
-                        <!--photo-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="img/solar (2).jpg">
-                    <div class="photo-overlay">
-                        <h3>Click to enlarge</h3>
-                        <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
-                    </div>
-                </div>
-            </div>
-            <!--end photo-->
-                        <!--photo-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="img/solar (3).jpg">
-                    <div class="photo-overlay">
-                        <h3>Click to enlarge</h3>
-                        <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
-                    </div>
-                </div>
-            </div>
-            <!--end photo-->
-                        <!--photo-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="img/solar (4).jpg">
-                    <div class="photo-overlay">
-                        <h3>Click to enlarge</h3>
-                        <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
-                    </div>
-                </div>
-            </div>
-            <!--end photo-->
-                        <!--photo-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="img/solar (5).jpg">
-                    <div class="photo-overlay">
-                        <h3>Click to enlarge</h3>
-                        <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
-                    </div>
-                </div>
-            </div>
-            <!--end photo-->
-                        <!--photo-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="img/solar (6).jpg">
-                    <div class="photo-overlay">
-                        <h3>Click to enlarge</h3>
-                        <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
-                    </div>
-                </div>
-            </div>
-            <!--end photo-->
-                        <!--photo-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="img/solar (7).jpg">
-                    <div class="photo-overlay">
-                        <h3>Click to enlarge</h3>
-                        <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
-                    </div>
-                </div>
-            </div>
-            <!--end photo-->
-                        <!--photo-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="img/solar (8).jpg">
-                    <div class="photo-overlay">
-                        <h3>Click to enlarge</h3>
-                        <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
-                    </div>
-                </div>
-            </div>
-            <!--end photo-->
-                        <!--photo-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="img/solar (9).jpg">
-                    <div class="photo-overlay">
-                        <h3>Click to enlarge</h3>
-                        <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
-                    </div>
-                </div>
-            </div>
-            <!--end photo-->
+HTML {
+    font-family:sans-serif;
+}
+body{
+    font-size: 14px;
+    margin: 0;
+    font-family:"helvetica heue" , Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+
+}
+footer,
+nav{
+    display: block;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'open sans', sans-serif;
+
+}
+h1{
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: E91C1C;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+
+}
+h1::after{
+    display: block;
+    content: "";
+    width: 150px;
+    background: #E91C1C;
+    height: 5px auto 40px;
+    box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+
+}
+h2{
+    line-height: 50px;
+    color: #e91c1c;
+}
+h3{
+    line-height: 30px;
+padding-bottom: 20px;
+}
+h4{
+    padding: top 25px;
+    line-height: 40px;
+    padding-bottom: 0;
+    font-size: 22px;
+    font-weight: 900;
+}
+p{
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+.text-center{
+    text-align: center;
+}
+.heading-padding{
+    padding-bottom:40px;
+    color: red;
+
+}
+section{
+    padding-top: 50px;
+    margin-top: 50px;
+
+}
+.navbar{
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.row{
+    margin-left: -15px;
+    margin: -15px;
+}
+.clearfix:after,
+.container,
+.navbar:after{
+    clear: both;
+    display: table;
+    content: " ";
+}
+.wrap{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+.menu-container{
+    max-height: 340px;
+    margin: 0% auto;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#home{
+    background: url('img/planets.jpg') no-repeat 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 500px;
+    color: #ffffff;
+
+}
+.head-main{
+    text-shadow: 2px 4px 5px rgba(0,0,0,0.5);
+    font-variant: small-caps;
+    color: #ffffff;
+    letter-spacing: 5px;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 2;
+    border: 5px double #ffffff;
+    padding: 10px;
+    font-weight: 900;
+}
+.head-sub-main{
+    font-size: 23px;
+    font-weight: 500;
+    padding: 5px 20px 20px 20px;
+   
+
+}
+.head-last{
+    text-transform: uppercase;
+    border: 1px dotted #ffffff;
+    font-size: 18px;
+    font-weight: 900;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(100,65,0,0.3);
+    box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.5);
 
 
-            
-        </div>
-    </div>
-</section>
+}
+#contact{
+    background-color: #f5f3f3;
 
-<!--gallery-->
-<!--Reservation-->
-<section>
-    <div id="contact">
-        <div class="container">
-            <div class="heading-padding">
-                <h1 class="heading-padding">Reservation</h1>
-                <div class="reservation">
-                    <h2>Your adventure is just around  the moon
-                    </h2>
-                    <p class="rsvp-text">
-                        Reserve your Right today!
+}
+.reservation{
+    width: 60%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgba(100,65,0,0.3);
+    box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.5);
+    }
 
-                    </p>
-                    <p class="rsvp-text">
-                        Reserve your Right today!
-                        please provide us with your basic contact information
-                    </p>
-                    <div class="form-rsvp">
-                        <form action="/action_page.php" method="POST">
-                            <input class="rsvp" type="text" id="fname" name="fname"><br><br>
-                            <input type="text" id="lname" name="lname"><br><br>
-                        </form>
-                        <div class="form-spacer">
-                            <label class="trust">trust and condition</label>
-                        </div>
-                        <div class="submit">
-                            <input type="submit" value="Submit">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    .reservation h2{
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        color: #13161B;
+        font-weight: 900;
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .reservation form{
 
-<!--reservation-->
-<footer id="footer">
-    WWW.THESPACESTATION.SPACE /|&nbsp; &COPY;
-</footer>
-</html>
+        padding: 10px;
+        margin: 0 auto;
+        color: #13161B;
+        font-weight: 500;
+        border-radius: 7px;
+        font-size: 1.3em;
+        box-shadow: 2px 3px 2px 0;
+        background-color:rgba(100,65,1,.1);;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .reservation input[type="text"] {
+        outline: none;
+        font-size: 15px;
+        color: #8d8e8f;
+        padding: 2% 1% 2% 7%;
+        border: 2px solid #424549;
+        width: 80%;
+        margin: 10px 1em;
+        background: #13161b;
+        border-radius: 7px;
+        box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
+
+    }
+
+    .reservation input[type="text"]:hover {
+        box-shadow: 0 0 18px rgba(100,65,0,0.3);
+    }
+    .form-spacer{
+        padding: 30px 37px;
+    }
+    .trust{
+        margin: 30px 1px 0 0;
+        padding-left: 52px;
+        font-size: 14px;
+        line-height: 5px;
+        color: #000000;
+        cursor: pointer;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        position: relative;
+        display: inline;
+        float: right;
+    }
+    .trust:hover{
+        color: orange;
+        text-decoration: underline;
+    }
+    #footer{
+        background-color: rgba(100,65,0,0.3);
+        padding: 20px 50px;
+        text-align: right;
+    }
+    .submit input[type="submit"]:hover{
+        color: #000000;
+        background-color: #8d8e8f;
+        box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+    }
+    .menu{
+        color: #f00;
+        font: bold 12px arial;
+        text-align: center;
+        display: inline;
+        margin: 0px auto;
+        padding: 0;
+        text-decoration: none;
+
+    }
+    .menu li{
+        color: #000000;
+        background-color: rgba(255, 255, 255, 1);
+        display: inline-block;
+        margin: 0% auto;
+        position: relative;
+        padding: 15px 4%;
+        border: 1px solid #9d9fa2;
+        box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+        border-radius: 6px;
+        cursor: pointer;
+        transition-property: background;
+        transition-duration: .4s;
+        transition-delay: 0s;
+        transition-timing-function: ease-in-out;
+    }
+    .menu li{
+        color: #f00;
+        background-color: rgba(100,65,0,0.3);
+
+    }
+    .photo{
+        width: 300px;
+        height: 169px;
+        position: relative;
+        line-height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        padding: 1px;
+        border: 1px solid #021a40;
+        background-color: #ff0;
+        box-shadow: 2px 2px 10px 0;
+    }
+    .photo-container img{
+        max-width: 100%;
+        width: 300px;
+        height: 169px;
+    }
+    .photo-overlay{
+        left: 0;
+        right: 0;
+        top: 0%;
+        bottom: 0%;
+        position: absolute;
+        color: #ffffff;
+        background: rgba(0,0,0,0.5);
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+
+
+    }
+    .white-head {
+        margin-top: 5%;
+        color: #c9b0aa;
+    }
+    .photo-overlay:hover {
+        opacity: 1;
+    }
+    .photo-overlay{
+        opacity: 0;
+        transition: opacity .5S;
+        border-radius: 10px;
+    }
+    .photo img {
+        
+        transform-origin: 50% 50%;
+        transition: Transform .5s;
+
+    }
+    .photo:hover img{
+        transform: scale(1,1);
+    }
+    .text-center{
+        margin: 20%;
+    }
+    #gallery{
+        text-align: center;
+    }
+    .rsvp-text{
+        text-align: center;
+        color: rgba(0,0,0,0.5);
+    }
