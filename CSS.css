@@ -112,7 +112,6 @@ section{
     max-height: 340px;
     margin: 0% auto;
     width: 100%;
-    position: fixed;
     z-index: 100;
 }
 #home{
@@ -161,7 +160,7 @@ section{
     border-radius: 8px;
     background-color: rgba(100,65,0,0.3);
     box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.5);
-
+    
 
 }
 #contact{
@@ -169,11 +168,13 @@ section{
 
 }
 .reservation{
-    width: 60%;
+    width: 100%;
     padding: 10px;
     margin: 0 auto;
-    background-color: rgba(100,65,0,0.3);
+    background-color: rgba(114,18,0,0.3);
     box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.5);
+    border-radius: 7px;
+
     }
 
     .reservation h2{
@@ -194,7 +195,7 @@ section{
         border-radius: 7px;
         font-size: 1.3em;
         box-shadow: 2px 3px 2px 0;
-        background-color:rgba(100,65,1,.1);;
+        background-color:rgba(114, 18, 74, 0.1);;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     .reservation input[type="text"] {
@@ -271,8 +272,8 @@ section{
         transition-timing-function: ease-in-out;
     }
     .menu li{
-        color: #f00;
-        background-color: rgba(100,65,0,0.3);
+        color: #001;
+        background-color:#ffffff;
 
     }
     .photo{
@@ -284,7 +285,7 @@ section{
         border-radius: 8px;
         padding: 1px;
         border: 1px solid #021a40;
-        background-color: #ff0;
+        background-color: #ffd;
         box-shadow: 2px 2px 10px 0;
     }
     .photo-container img{
@@ -332,6 +333,7 @@ section{
     }
     #gallery{
         text-align: center;
+        width: 80%;
     }
     .rsvp-text{
         text-align: center;
