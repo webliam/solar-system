@@ -30,8 +30,9 @@
 <!--Home-->
 <!--Gallery-->
 <section>
-    <div id="gallery" >
-        <h2>Gallery</h2>
+    <h2>Gallery</h2>
+
+    <div id="gallery" class="container" >
         <div class="flex-container">
             <!--photo-->
             <div class="photo-container">
@@ -159,8 +160,13 @@
                     </p>
                     <div class="form-rsvp">
                         <form action="/action_page.php" method="POST">
-                            <input class="rsvp" type="text" id="fname" name="fname"><br><br>
-                            <input type="text" id="lname" name="lname"><br><br>
+                            <input class="rsvp" type="text" id="fname" name="fname" placeholder="First Name"><br>
+                            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                            
+                            <input type="email" id="Email" name="Email" placeholder="Email"><br>
+                            <input  type="Text" id="contactNo" name="contactNo" placeholder="Contact Number"><br>
+
+                            <br>
                         </form>
                         <div class="form-spacer">
                             <label class="trust">trust and condition</label>
