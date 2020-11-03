@@ -153,6 +153,7 @@ section{
     font-size: 18px;
     font-weight: 900;
 }
+
 .flex-container{
     display: flex;
     flex-wrap: wrap;
@@ -160,7 +161,9 @@ section{
     border-radius: 8px;
     background-color: rgba(100,65,0,0.3);
     box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.5);
-    
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: center;
 
 }
 #contact{
@@ -211,7 +214,32 @@ section{
         box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
 
     }
+    .reservation input[type="Email"] {
+        outline: none;
+        font-size: 15px;
+        color: #8d8e8f;
+        padding: 2% 1% 2% 7%;
+        border: 2px solid #424549;
+        width: 80%;
+        margin: 10px 1em;
+        background: #13161b;
+        border-radius: 7px;
+        box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
 
+    }
+    .submit input[type="submit"]{
+        color: rgba(225,225,225,0.5);
+        cursor: pointer;
+        border: none;
+        margin: opx 3%;
+        padding: 7px 0px;
+        width: 25%;
+        font-size: 10px;
+        transition: border-color 0.3s color 0.3s ;
+        border-radius: 7px;
+        background-color: #797a7b;
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.5);
+    }
     .reservation input[type="text"]:hover {
         box-shadow: 0 0 18px rgba(100,65,0,0.3);
     }
@@ -331,10 +359,7 @@ section{
     .text-center{
         margin: 20%;
     }
-    #gallery{
-        text-align: center;
-        width: 80%;
-    }
+
     .rsvp-text{
         text-align: center;
         color: rgba(0,0,0,0.5);
